@@ -55,7 +55,7 @@ echo "CHAIN_ID="$CHAIN_ID >> .env
 docker run --rm -it \
 -v $PWD/config:/data \
 -v $PWD/values.env:/config/values.env \
-ethpandaops/ethereum-genesis-generator:electra-genesis cl
+ethpandaops/ethereum-genesis-generator:master cl
 
 rm -rf vc
 
